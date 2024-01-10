@@ -1,0 +1,34 @@
+.section {
+  padding: 0 0 50px;
+}
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-content h3 {
+  font-size: 96px;
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: -3px;
+  padding: 0 25px;
+}
+.section-content h3.h-bold {
+  font-weight: 600;
+}
+.section-content span { 
+  color: var(--white);
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media(max-width:767px) {
+  .section-content h3 {
+    font-size: 56px;
+  }
+
+  .section-content span {
+    font-size: 16px;
+  }
+}

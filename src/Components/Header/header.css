@@ -1,0 +1,73 @@
+.header {
+  min-height: 65px;
+  padding: 20px 0;
+}
+.header-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 4;
+}
+.header-content .logo {
+  width: 70px;
+  cursor: pointer;
+}
+.header-content .logo img {
+  max-width: 100%;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu .btn {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--white);
+}
+.menu .outline-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 2s linear infinite;
+  -webkit-animation: morph 2s linear infinite;
+}
+.menu .outline-2 { border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%; -webkit-border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%; -moz-border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%; -ms-border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%; -o-border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%;
+}
+
+@keyframes morph {
+  0% {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+100% {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+}
+.menu .open {
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+.menu .open li {
+  transition: 0.5s;
+  width: 100%;
+  height: 1.25px;
+  background-color: var(--white);
+}

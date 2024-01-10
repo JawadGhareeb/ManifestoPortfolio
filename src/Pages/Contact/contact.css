@@ -1,0 +1,47 @@
+@media(max-width: 450px) {
+  .boxes-inputs {
+    flex-direction: column;
+    gap: 45px;
+  }
+  .boxes-inputs .box-input {
+    width: 100%;
+  }
+}
+
+.box-input::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: #777;
+}
+.send {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin-top: 65px;
+  padding: 10px;
+  cursor: pointer;
+}
+.send button {
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--white);
+  padding: 15px 35px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s;
+    border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+@media(max-width: 450px) {
+  .texth3 {
+    font-size: 30px !important;
+  }
+}

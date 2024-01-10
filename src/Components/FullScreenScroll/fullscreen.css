@@ -1,0 +1,78 @@
+.fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.fullscreen .full-name {
+  position: fixed;
+  left: 50%;
+  top: 115%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(0 0%, 100% 0%, 100% 120px, 0 120px);
+}
+
+.fullscreen .full-name .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+}
+
+.fullscreen .full-name h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.fullscreen .full-name span {
+  font-weight: 100;
+}
+
+.fullscreen .full-name p {
+  font-weight: 600;
+}
+
+.slide-images {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.slide-images .slideimage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.slide-images #slide-0 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.slide-images .slideimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media(max-width: 850px) {
+  .fullscreen .full-name {
+    top: 75%;
+    clip-path: polygon(0 0%, 100% 0%, 100% 60px, 0 60px);
+  }
+  .fullscreen .full-name h3  {
+    font-size: 40px;
+  }
+}

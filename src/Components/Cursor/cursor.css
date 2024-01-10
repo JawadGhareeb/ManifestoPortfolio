@@ -1,0 +1,21 @@
+.cursor {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 2px solid #777;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: transform 0.05s linear;
+  -webkit-transition: transform 0.05s linear;
+  -moz-transition: transform 0.05s linear;
+  -ms-transition: transform 0.05s linear;
+  -o-transition: transform 0.05s linear;
+}
+
+@media(max-width: 991px) {
+  .cursor {
+    display: none;
+  }
+}

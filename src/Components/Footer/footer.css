@@ -1,0 +1,27 @@
+.hoverd {
+  opacity: 0;
+}
+.thisHover:hover .hoverd {
+  opacity: 1;
+  animation: animate 5s linear infinite;
+  transition: .5s linear;
+}
+@keyframes animate{
+  to{
+    transform: translateX(-50%);
+}
+}
+.thisHover {
+  padding: 60px 20px;
+}
+@media(max-width:767px) {
+  .thisHover {
+    padding: 40px 20px;
+  }
+  .thisHover h1 {
+    font-size: 20px;
+  }
+  .parafooter {
+    font-size: 18px;
+  }
+}
